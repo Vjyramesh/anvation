@@ -1,0 +1,234 @@
+body {
+    font-size: 0.875rem;
+    background: #FAFBFE;
+    line-height: 1.5rem;
+}
+/*----- Navbar Css -----*/
+.navbar {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.21);
+    height: 4.5rem;
+    z-index: 9999;
+}
+/*----- Navbar Css -----*/
+
+/*----- Main Banner Css -----*/
+section.main-banner {
+    height: calc(100vh - 5.5rem);
+    background: url("./../images/iot.jpg");
+    margin-top: 1rem;
+    color: #fff;
+}
+
+
+.main-banner .statistics {
+    bottom: 10rem;
+    right: 5rem;
+    width: 50vw;
+}
+
+.main-banner .statistics h3 {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+/*----- Main Banner Css -----*/
+/*----- Our Innovations Css -----*/
+.our-innovations {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.our-innovations .products {
+    height: 80vh;
+    background: #f1f1f1;
+}
+.our-innovations li > .row {
+    min-height: 80vh;
+}
+.our-innovations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.our-innovations .card {
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.28);
+    border: none;
+    border-radius: 0;
+}
+
+.our-innovations .date {
+    font-size: 0.8rem;
+}
+/*----- Our Innovations Css -----*/
+/*----- Project List -----*/
+
+.project-list {
+    line-height: 1.3rem;
+    font-size: 0.850rem;
+}
+
+.project-list img {
+    height: 10rem;
+}
+/*----- Project List -----*/
+/*----- Domain Work -----*/
+
+.domain-work .our-domain-img  {
+    height: 15rem;
+    color: #fff;
+    background: #ccc;;
+}
+
+.domain-work h4 {
+    font-size: 1.2rem;
+}
+
+.domain-work .our-domain-img.solar-panel {
+    height: 31rem;
+    background: url("../images/solar_panel.jpg") center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.domain-work .energy {
+    background: url("../images/windmills.jpg") center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.domain-work .home-building {
+    background: url("../images/HomeBuildingAutomation.jpg") center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.domain-work .connectivity {
+    background: url("../images/iot.jpg") center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.domain-work .consumer-electronics {
+    background: url("../images/consumerelectronics.jpg") center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/*----- Domain Work -----*/
+/*----- Technology Updates -----*/
+
+.technology-updates h4 {
+    font-size: 1.2rem;
+}
+.technology-updates input {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.19);
+    border: none;
+    margin-right: 5px;
+    font-size: 0.875rem;
+}
+
+.technology-updates button {
+    background: #FFA500;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+}
+.technology-updates .card {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    font-size: 0.8rem;
+    border-radius: 0;
+    line-height: 1.75rem;
+
+}
+.technology-updates hr {
+    border: 1px solid #ccc;
+}
+.technology-updates .card:hover {
+    background: linear-gradient(0deg,rgba(33,150,243,0.7),rgba(33, 150, 243, 0.7)),url(../images/iot.jpg);
+    color: #fff;
+}
+/*----- Technology Updates -----*/
+
+/*---- Footer Css -----*/
+footer ul {
+    list-style: none;
+}
+footer h1 {
+    font-size: 1.5rem;
+}
+footer a {
+    color: #8e8e8e;
+}
+footer a:hover {
+    color: #000;
+    text-decoration: none;
+}
+footer .contact {
+    color: #8e8e8e;
+}
+footer .social-links a {
+    width: 30px;
+    height: 30px;
+    background: #efefef;
+}
+footer .social-links a:hover {
+    background: #3979F3;
+    color: #fff;
+}
+/*---- Footer Css -----*/
+
+/*---- Domain works Banner ------*/
+.main-banner.domain-works {
+    height: 75vh;
+}
+.fp-tableCell {
+    vertical-align: initial;
+}
+
+.main-banner.domain-works {
+    background: url("../images/solar_panel.jpg") center;
+    background-size: cover;
+}
+
+#secondPage .main-banner.domain-works {
+    background: url("../images/drone.jpg") center;
+    background-size: cover;
+}
+#thirdPage .main-banner.domain-works {
+    background: url("../images/solar_panel.jpg") center;
+    background-size: cover;
+}
+
+#fourthPage .main-banner.domain-works {
+    background: url("../images/drone.jpg") center;
+    background-size: cover;
+}
+#myMenu {
+    position: fixed;
+    z-index: 1051;
+    font-size: 30px;
+    line-height: 80px;
+    list-style: none;
+    padding: 0;
+    left: 50px;
+    top: 120px;
+}
+/*---- Domain works Banner ------*/
+
+
+.main-banner.detail-1 {
+    background: url("../images/consumerelectronics.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.img-row img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
+
+.description-card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+}
