@@ -65,15 +65,24 @@
     </section>
     <scrtion class="owl-container">
         <div class="container">
-
+            <h4 class="text-uppercase text-center font-weight-bold">More Innovations</h4>
                 <div class="owl-carousel">
-                        <div> Your Content </div>
-                        <div> Your Content </div>
-                        <div> Your Content </div>
-                        <div> Your Content </div>
-                        <div> Your Content </div>
-                        <div> Your Content </div>
-                        <div> Your Content </div>
+                        <div class="p-5">
+                            <img src="images/solar_panel.jpg" class="img-fluid">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis vel, non quod aperiam sed laboriosam soluta doloremque saepe nulla temporibus? Quos laudantium delectus</p>
+                        </div>
+                        <div class="p-5">
+                            <img src="images/solar_panel.jpg" class="img-fluid">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis vel, non quod aperiam sed laboriosam soluta doloremque saepe nulla temporibus? Quos laudantium delectus</p>
+                        </div>
+                        <div class="p-5">
+                            <img src="images/solar_panel.jpg" class="img-fluid">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis vel, non quod aperiam sed laboriosam soluta doloremque saepe nulla temporibus? Quos laudantium delectus </p>
+                        </div>
+                        <div class="p-5">
+                            <img src="images/solar_panel.jpg" class="img-fluid">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis vel, non quod aperiam sed laboriosam soluta doloremque saepe nulla temporibus? Quos laudantium delectus</p>
+                        </div>
                       </div>
         </div>
     </scrtion>
@@ -143,7 +152,23 @@
     <script>
     $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-      nav: true
+      nav: true,
+      responsiveClass:true,
+    responsive:{
+      0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
   });
 });</script>
 </body>

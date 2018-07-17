@@ -232,3 +232,51 @@ footer .social-links a:hover {
 .description-card {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
 }
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 70px;
+    left: 0;
+}
+.owl-next {
+    float: right;
+}
+.owl-carousel .owl-item img {
+    height: 120px;
+}
+
+.main-story img {
+    height: 350px;
+    width: 100%;
+    border-radius: 5px;
+}
+.main-story .content:before {
+    content: "";
+    position: absolute;
+    background: #2196F3;
+    width: calc(100% + 50px);
+    height: 100%;
+    z-index: -1;
+    color: #fff;
+    left: -50px;
+    top: 0px;
+    border-radius: 5px;
+}
+.main-story .content.right:before {
+    left: 0;
+    background: #FF9800;
+}
+.content-story p{
+    color:#fff;
+}
+
+.main-story .content {
+    height: 400px;
+}
+
+.our-story .card {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    line-height: 30px;
+}
