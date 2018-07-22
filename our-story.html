@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Anvation  Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/brands.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -29,12 +29,19 @@
                 <li class="nav-item">
                     <a class="nav-link px-3 text-uppercase" href="#">About us</a>
                 </li>
+                <li class="nav-item">
+                        <a class="nav-link px-3 sidemenu-trigger" href="#">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 <!--Navbar-->
 <div class="sidenav">
+        <a href="#" class="close-menu"><i class="fas fa-times"></i></a>
+    
     <ul>
         <li><a href="#">Life @ Innovation Labs</a></li>
         <li><a href="#">About</a></li>
@@ -214,5 +221,13 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+            $(".sidemenu-trigger").on('click', function() {
+                $(".sidenav").toggleClass('active');
+            });
+            $(".close-menu").on('click', function() {
+                $(".sidenav").removeClass('active');
+            });
+            </script>
 </body>
 </html>

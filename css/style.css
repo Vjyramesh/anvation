@@ -208,7 +208,7 @@ footer .social-links a:hover {
     list-style: none;
     padding: 0;
     left: 50px;
-    top: 120px;
+    top: 210px;
 }
 #fullpage .project-list .container {
     width: 60%;
@@ -500,6 +500,7 @@ footer .social-links a:hover {
         text-align: center;
         margin: 0;
         line-height: 38px;
+        top: 0
     }
 .get-touch p {
     margin-top: 15px;
@@ -604,6 +605,11 @@ footer .social-links a:hover {
     display: block;
 }
 @media (max-width:768px) {
+    .sidenav {
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
     .testimonials .clients .description {
         display: block;
     }
@@ -642,6 +648,15 @@ footer .social-links a:hover {
     }
     #fullpage .project-list .container {
         width: 100%;
+    }
+    .main-story .content.right:before {
+        left: 0;
+        background: #FF9800;
+        width: 100%;
+    }
+    .get-touch button, .get-touch .attach-a-file {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 .modal-custom.active {
@@ -682,4 +697,12 @@ footer .social-links a:hover {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+footer .contact i {
+    font-size: 30px;
+}
+.back-button{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
 }
