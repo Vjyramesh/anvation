@@ -1,12 +1,12 @@
 body {
-    font-size: 0.875rem;
+    font-size: 14px;
     background: #FAFBFE;
     line-height: 1.5rem;
 }
 /*----- Navbar Css -----*/
 .navbar {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.21);
-    height: 4.5rem;
+    min-height: 4.5rem;
     z-index: 9999;
 }
 /*----- Navbar Css -----*/
@@ -15,7 +15,7 @@ body {
 section.main-banner {
     height: calc(100vh - 5.5rem);
     background: url("./../images/iot.jpg");
-    margin-top: 1rem;
+    margin-top: 6rem;
     color: #fff;
 }
 
@@ -279,4 +279,340 @@ footer .social-links a:hover {
 .our-story .card {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     line-height: 30px;
+}
+
+.sidenav {
+    position: fixed;
+    z-index: 99999;
+    right: -0;
+    width: 350px;
+    background: #FFA500;
+    height: calc(100% - 72px);
+    padding: 105px 5px 5px 30px;
+    top: 72px;
+}
+.sidenav {
+    display: none;
+}
+.sidenav.active {
+    display: block;
+}
+.sidenav ul {
+    list-style: none;
+    padding: 0;
+}
+.sidenav .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sidenav ul:nth-of-type(1) {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.sidenav p {
+    float: right;
+    width: 140px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.sidenav button {
+    background: transparent;
+    border: 1px solid #fff;
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+.sidenav .social {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.sidenav .social li {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    .main-banner-contact {
+        margin-top: 100px;
+        height: 80vh;
+    }
+    .main-banner-contact > .container {
+        background: url(../images/BetterWorld.jpg);
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .talk-to-us {
+        width: 80%;
+        background-color: #fff;
+        position: absolute;
+        left: 10%;
+        padding: 30px 100px;
+        top: 80%;
+        line-height: 30px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .talk-to-us p {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .get-touch .container > div{
+        width: 80%;
+        margin: 0 auto;
+        background: #FAFBFE;
+        margin-top: 250px;
+        padding: 40px;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .get-touch ul {
+        margin: 0;
+        list-style: none;
+        display: table;
+        padding: 0;
+        width: 100%;
+    }
+
+    .get-touch li {
+        display: table-cell;
+
+    }
+    .get-touch input[type='radio'] {
+        visibility: hidden;
+    }
+    .get-touch input[type='radio'] + label {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        pointer-events: none;
+        margin: 0;
+        margin-right: 5px;
+    }
+    .get-touch input[type='radio'] + label:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+    }
+    .get-touch input[type='radio'] + label:before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+
+    .get-touch input[type='radio']:checked + label:before {
+        background: #000;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: 5px 12px;
+        height: 40px;
+        border: 1px solid #e6e6e6;
+        margin-bottom: 20px;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #e6e6e6;
+    }
+
+    :-moz-placeholder {
+        color: #e6e6e6;
+    }
+    textarea.form-control {
+        height: 200px;
+        resize: none;
+    }
+
+    .get-touch button , .get-touch .attach-a-file {
+        width: calc(50% - 30px);
+        float: left;
+        background-color: #000;
+        color: #fff;
+        height: 38px;
+        margin: 0;
+        border-radius: 0;
+    }
+    .get-touch button {
+        background: #FFA500;
+        margin-right: 60px;
+    }
+    .get-touch .attach-a-file input{
+        visibility: hidden;
+    }
+    .attach-a-file label {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        line-height: 38px;
+    }
+.get-touch p {
+    margin-top: 15px;
+    color: #909090;
+}
+.contact-us-map .container >div {
+    width: 80%;
+    margin: 0 auto;
+    margin: 100px auto ;
+}
+.contact-us-map .address {
+    position: absolute;
+    background: #FFA500;
+    width: 50%;
+    left: 100px;
+    top: -50px;
+    color: #fff;
+}
+.contact-us-map .address h1 {
+    background: #E88E0C;
+    padding: 30px 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.contact-us-map p {
+    padding: 0 100px;
+    margin: 0;    
+    font-weight: bold;
+}
+.contact-us-map p:first-of-type {
+    margin-top: 50px;
+}
+
+
+.contact-us-map .email, .contact-us-map .phone {
+
+    line-height: 40px;
+}
+
+.contact-us-map .line {
+    border-bottom: 1px solid #fff;
+    height: 1px;
+    width: 60%;
+    margin: 20px auto 75px;
+}
+
+.our-clients h4 {
+    font-size: 1.2rem;
+}
+.our-clients img {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+.testimonials {
+    margin: 50px 0;
+}
+.testimonials h4 {
+    margin: 30px 0px;
+    font-size: 1.2rem;
+}
+.testimonials img {
+    margin: 100px 0 0;
+}
+.testimonials .clients {
+    position: absolute;
+    width: 20%;
+    top: 200px;
+    text-align: center;
+    left: 10%;
+    color: #fff;
+    line-height: 36px;
+}
+.testimonials .clients img {
+    width: 100px;
+    margin: 0%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #000;
+    height: 100px;
+}
+.testimonials .clients:nth-of-type(2) {
+    left: 40%;
+}
+
+.testimonials .clients:nth-of-type(3) {
+    left: 70%
+}
+.testimonials .clients:hover {
+    background: #FFA500;
+    padding: 20px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    top: 60px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+.testimonials .clients .description {
+    display: none;
+}
+.testimonials .clients:hover .description {
+    display: block;
+}
+@media (max-width:768px) {
+    .testimonials .clients .description {
+        display: block;
+    }
+    .testimonials .clients {
+        background: #FF9800;
+        width: 100%;
+        position: static;
+        padding: 20px;
+        left: 0 !important;
+    }
+    .talk-to-us {
+        position: relative;
+        height: auto;
+        padding: 20px 20px;
+        width: 100%;
+        left: 0;
+    }
+    .contact-us-map .address {
+        position: relative;
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0
+    }
+    .contact-us-map p {
+        padding:0 20px ;
+    }
+    .talk-to-us p {
+        width: 100%;
+    }
+    .get-touch .container > div {
+        width: 100%;
+    }
 }
