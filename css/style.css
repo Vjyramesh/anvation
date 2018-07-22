@@ -188,28 +188,45 @@ footer .social-links a:hover {
     background-size: cover;
 }
 
-#secondPage .main-banner.domain-works {
+.secondPage .main-banner.domain-works {
     background: url("../images/drone.jpg") center;
     background-size: cover;
 }
-#thirdPage .main-banner.domain-works {
-    background: url("../images/solar_panel.jpg") center;
+.thirdPage .main-banner.domain-works {
+    background: url("../images/dream.jpg") center;
     background-size: cover;
 }
 
-#fourthPage .main-banner.domain-works {
-    background: url("../images/drone.jpg") center;
+.fourthPage .main-banner.domain-works {
+    background: url("../images/dirtyhands.jpg") center;
     background-size: cover;
 }
 #myMenu {
     position: fixed;
     z-index: 1051;
     font-size: 30px;
-    line-height: 80px;
     list-style: none;
     padding: 0;
     left: 50px;
     top: 120px;
+}
+#fullpage .project-list .container {
+    width: 60%;
+}
+#myMenu li {
+    position: relative;
+}
+#myMenu li:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 60px;
+    height: 2px;
+    background: #ccc;
+}
+#myMenu li.active a {
+    color: #ccc !important;
+    font-weight: bold;
 }
 /*---- Domain works Banner ------*/
 
@@ -311,7 +328,12 @@ footer .social-links a:hover {
     text-decoration: none;
     color: #000;
 }
-
+#myMenu a {
+    font-size: 14px;
+    color: #e4e4e4;
+    line-height: 60px;
+    text-decoration: none;
+}
 .sidenav ul:nth-of-type(1) {
     font-size: 20px;
     line-height: 40px;
@@ -615,4 +637,49 @@ footer .social-links a:hover {
     .get-touch .container > div {
         width: 100%;
     }
+    #myMenu {
+        display: none;
+    }
+    #fullpage .project-list .container {
+        width: 100%;
+    }
+}
+.modal-custom.active {
+    display: block;
+}
+.modal-custom {
+    z-index: 9999;
+    display: none;
+    top: 100px;
+    padding: 30px 60px;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    height: calc(100% - 100px);
+    overflow: auto;
+    width: 100%;
+}
+.modal-custom h4 {
+    font-size: 14px;
+}
+.modal-custom .owl-carousel > div {
+    padding: 30px;
+}
+.modal-custom .close-modal {
+    position: fixed;
+    top: 130px;
+    right: 44px;
+    color: #000;
+    text-decoration: none;
+}
+.modal-custom .owl-carousel .owl-nav {
+    top: 200px;
+    color: #fff;
+    left: 15px;
+}
+.modal-custom img {
+    height: 300px !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
