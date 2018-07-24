@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -49,11 +50,11 @@
         <li><a href="#">Life @ Innovation Labs</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Blogs</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="./contact-us.html">Contact</a></li>
     </ul>
     <div>
         <p class="text-left">Lets make life easier together!</p>
-        <button class="btn text-uppercase"> Get In Touch</button>
+        <a class="btn text-uppercase" href="./contact-us.html"> Get In Touch</a>
     </div>
     <ul class="social">
         <li><a href="#">Facebook</a></li>
@@ -77,7 +78,31 @@
     <section class="our-innovations">
         <div class="container">
             <h4 class="text-uppercase text-center my-5 font-weight-bold">Our Innovations!</h4>
-            <ul>
+            <ul class="owl-carousel">
+                <li>
+                    <div class="row align-items-end">
+                        <div class="col-12 col-sm-6 col-md-6 pr-0">
+                            <img src="images/consumerelectronics.jpg" class="products img-fluid w-100">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 pl-0">
+                            <div class="card">
+                                <span class="date d-inline-block my-3 mx-3">20 July 2018</span>
+                                <hr class="mt-0" />
+                                <div class="card-body mt-2 pt-0">
+                                    <h4 class="mb-4 font-weight-bold">Lorem Ipsum is simply dummy </h4>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                        text ever since the 1500s.
+                                    </p>
+                                    <p>But also the leap into electronic typesetting, remaining essentially unchanged. It was
+                                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                        passages.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <div class="row align-items-end">
                         <div class="col-12 col-sm-6 col-md-6 pr-0">
@@ -372,6 +397,7 @@
     <!-- Footer -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script>
     $(".sidemenu-trigger").on('click', function() {
         $(".sidenav").toggleClass('active');
@@ -380,6 +406,28 @@
         $(".sidenav").removeClass('active');
     });
     </script>
+        <script>
+        $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+          nav: true,
+          responsiveClass:true,
+        responsive:{
+          0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:1,
+                nav:false
+            },
+            1000:{
+                items:1,
+                nav:true,
+                loop:false
+            }
+        }
+      });
+    });</script>
 </body>
 
 </html>

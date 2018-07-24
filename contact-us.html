@@ -161,7 +161,8 @@
     <section class="contact-us-map">
         <div class="container">
             <div class="position-relative">
-                    <img src="./images/astronomy-dark-dawn-573238.jpg" class="img-fluid"/>
+                    <!-- <img src="./images/astronomy-dark-dawn-573238.jpg" class="img-fluid"/> -->
+                    <div id="map"></div>
                     <div class="address">
                         <h1>Drop in ?</h1>
                         <p>355 Maple Court</p>
@@ -237,6 +238,8 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap"
+    async defer></script>
     <script>
             $(".sidemenu-trigger").on('click', function() {
                 $(".sidenav").toggleClass('active');
@@ -245,6 +248,15 @@
                 $(".sidenav").removeClass('active');
             });
             </script>
+                <script>
+                    var map;
+                    function initMap() {
+                      map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: -34.397, lng: 150.644},
+                        zoom: 8
+                      });
+                    }
+                  </script>
 </body>
 
 </html>
