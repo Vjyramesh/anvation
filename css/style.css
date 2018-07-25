@@ -359,7 +359,8 @@ footer .social-links a:hover {
 }
 
 .sidenav p {
-    float: right;
+    /* float: right; */
+    margin-left: 154px;
     width: 140px;
     margin-right: 20px;
     margin-top: 50px;
@@ -622,6 +623,10 @@ footer .social-links a:hover {
 }
 .testimonials .clients:hover .description {
     display: block;
+}
+a, a:hover {
+    text-decoration: none;
+    color: #000;
 }
 @media (max-width:768px) {
     .our-innovations .owl-nav  {
