@@ -183,6 +183,7 @@ footer a:hover {
 footer .contact {
     color: #8e8e8e;
 }
+
 footer .social-links a {
     width: 30px;
     height: 30px;
@@ -309,7 +310,7 @@ footer .social-links a:hover {
 }
 
 .main-story .content {
-    height: 400px;
+    min-height: 400px;
 }
 
 .our-story .card {
@@ -628,7 +629,16 @@ a, a:hover {
     text-decoration: none;
     color: #000;
 }
+.our-innovations .owl-item {
+    padding: 5px;
+}
 @media (max-width:768px) {
+    .our-innovations .owl-item {
+        padding: 0px;
+    }
+    footer .social-links {
+        text-align: center;
+    }
     .our-innovations .owl-nav  {
         bottom: initial;
     }
