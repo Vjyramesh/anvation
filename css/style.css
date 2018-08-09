@@ -234,19 +234,25 @@ footer .social-links a:hover {
     width: 60%;
 }
 #myMenu li {
-    position: relative;
+    position: relative;   
 }
-#myMenu li:before {
+
+#myMenu li:not(:first-of-type):before {
     content: "";
     position: absolute;
     top: 10px;
     width: 60px;
     height: 2px;
+    transition: 0.5s ease all;    
     background: #ccc;
+}
+#myMenu li:hover:before {
+    width: 80px;
 }
 #myMenu li.active a {
     color: #ccc !important;
     font-weight: bold;
+    transition: 0.5s ease all;    
 }
 /*---- Domain works Banner ------*/
 
@@ -782,7 +788,7 @@ footer .contact i {
     font-size: 30px;
 }
 .back-button{
-    font-size: 30px;
+    font-size: 30px !important;
     color: #fff;
     text-decoration: none;
 }
@@ -808,4 +814,24 @@ a.fixed-button i{
 
 .technology-input {
     margin-top: 40px;
+}
+
+ul#myMenu li:hover a {
+    font-weight: bold;
+}
+.project-list .owl-next span, .project-list .owl-prev span {
+    background: rgba(255, 255, 255, 0.63);
+    padding: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+}
+
+.project-list .owl-next {
+    margin-right: 9px;
+}
+
+.project-list img {
+    height: auto !important;
+}
+.project-list .owl-prev {
+    margin-left: 9px;
 }
