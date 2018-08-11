@@ -208,12 +208,15 @@ footer .social-links a:hover {
     }
     #myMenu li:first-of-type {
         margin-top: -100px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
 .fp-tableCell {
     vertical-align: initial;
+}
+.domain-footer {
+    margin-top: 50px;
 }
 @media(min-width:769px) {
     .domain-navbar {
@@ -226,12 +229,24 @@ footer .social-links a:hover {
     #fullpage h2 {
         margin-top: 60px !important; 
     }
+    #fullpage .project-list .card {
+        margin-bottom: 20px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.22);
+        border: none;
+        border-radius: 0;
+    }
+    #fullpage .project-list .card h2 {
+        margin: 0px !important;  
+        font-size: 12px;
+        font-weight: 600;
+        padding: 10px;
+    }
     #fullpage .project-list {
         position: absolute;
-        top: 150px;
+        top: 120px;
         z-index: 1;
-        right: 100px;
-        width: 60%;
+        right: 33px;
+        width: 15%;
     }
     #fullpage section.main-banner {
         height: 100vh !important;
@@ -375,6 +390,8 @@ footer .social-links a:hover {
     transform: translate(0px);
     transition: 0.5s ease all;
 }
+
+
 .sidenav ul {
     list-style: none;
     padding: 0;
