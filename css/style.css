@@ -17,6 +17,9 @@ section.main-banner {
     background: url("./../images/iot.jpg");
     margin-top: 6rem;
     color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -373,11 +376,22 @@ footer .social-links a:hover {
 .owl-carousel .owl-item img {
     height: 120px;
 }
-
+.our-clients .owl-carousel .owl-item img {
+    height: auto;
+}
 .main-story img {
     height: 350px;
     width: 100%;
     border-radius: 5px;
+}
+
+.our-clients .owl-nav {
+    width: calc(100% - 16px);
+    left: 8px;
+}
+.our-clients .owl-nav span {
+    background: #fff;
+    padding: 10px;
 }
 .main-story .content:before {
     content: "";
@@ -680,22 +694,31 @@ footer .social-links a:hover {
 }
 .testimonials .clients {
      /* position: absolute; */
-    width: 20%;
-    top: 200px;
+    /* width: 20%; */
+    /* top: 200px; */
     text-align: center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     color: #fff;
     line-height: 36px;
     /* display: inline-block */
-    float: left;
+    /* float: left; */
     min-height: 350px;
 }
 .testimonials .clients img {
     width: 125px;
-    margin: 0%;
+    margin: 0% auto;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #000;
     height: 125px;
+    display: block;
+}
+.testimonials .owl-nav {
+    top: 50px;
+}
+.testimonials .owl-nav span {
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 10px;
 }
 /* .testimonials .clients:nth-of-type(2) {
     margin-left: 40%;
@@ -727,7 +750,34 @@ a, a:hover {
 .our-innovations .owl-item {
     padding: 5px;
 }
+.technology-updates .owl-nav span {
+    display: block;
+padding: 10px 10px 15px;
+font-size: 36px;
+background: #fff;
+}
+
+.technology-updates .owl-nav {
+    width: calc(100% - 16px);
+    font-size: 70px;
+    left: 8px;
+}
 @media (max-width:768px) {
+    #our-innovations {
+        display: none;
+    }
+    section.project-list h2 {
+        font-size: 20px;
+    }
+    section.project-list .owl-nav {
+        top: 25%;
+    }
+    section.project-list .card-body {
+        display: block !important;
+    }
+    .domain-work .our-domain-img.solar-panel {
+        height: 15rem;
+    }
     .our-innovations .owl-item {
         padding: 0px;
     }
@@ -843,14 +893,29 @@ a, a:hover {
 .modal-custom {
     z-index: 9999;
     display: none;
-    top: 100px;
+    top: 20px;
     padding: 30px 60px;
     background: #fff;
     position: fixed;
-    left: 0;
-    height: calc(100% - 100px);
+    left: 20px;
+    height: calc(100% - 40px);
     overflow: auto;
-    width: 100%;
+    width: calc(100% - 40px);
+}
+body.modal-custom-body:before {
+        content: "";
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+}
+#myMenu li {
+    display: none;
+}
+#myMenu li.active {
+    display: initial;
 }
 .modal-custom h4 {
     font-size: 14px;
@@ -860,8 +925,8 @@ a, a:hover {
 }
 .modal-custom .close-modal {
     position: fixed;
-    top: 130px;
-    right: 44px;
+    top: 40px;
+    right: 50px;
     color: #000;
     text-decoration: none;
 }
