@@ -33,7 +33,9 @@ section.main-banner {
     right: 5rem;
     width: 50vw;
 }
-
+.technology-updates a:hover {
+    color: #fff;
+}
 .main-banner .statistics h3 {
     display: inline-block;
     font-size: 1.5rem;
