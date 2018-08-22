@@ -80,7 +80,7 @@
             <img src="images/BetterWorld.jpg">
             <img src="images/BetterWorld.jpg">
             <img src="images/BetterWorld.jpg">
-            <iframe width="150" height="150" src="https://www.youtube.com/embed/tqKpk1wABuI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video" data-src="https://www.youtube.com/embed/tqKpk1wABuI">Youtube video</div>
         </div>
         <div class="card description-card p-4 my-4">
                 <p class="font-weight-bold text-uppercase">Description</p>
@@ -180,6 +180,12 @@
         </div>
     </footer>
     <!-- Footer -->
+    <div class="modal-image-video">
+        <i class="fas fa-times close-modal"></i>
+        <div>
+
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -213,9 +219,20 @@
                 $(".sidenav").removeClass('active');
             });
         $(".name-of-the-project .img-row *").on('click', function () {
-           $(".name-of-the-project .img-row *").removeClass('active');
-           $(this).addClass('active')
+           // $(".name-of-the-project .img-row *").removeClass('active');
+            if($(this).attr("data-src")!=undefined) {
+                $(".modal-image-video > div").html('<iframe src="'+$(this).attr('data-src')+'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+            } else {
+                $(".modal-image-video > div").html("<img src='"+$(this).attr('src')+"'/>")
+            }
+           $(".modal-image-video").addClass('active');
+            $("body").addClass('modal-shown')
         });
+        $(".close-modal").on('click', function () {
+            $(".modal-image-video > div").html("");
+            $(".modal-image-video").removeClass('active');
+            $("body").removeClass('modal-shown')
+        })
             </script>
 </body>
 </html>

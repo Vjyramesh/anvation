@@ -36,6 +36,59 @@ section.main-banner {
 .technology-updates a:hover {
     color: #fff;
 }
+.modal-image-video.active {
+    display: block;
+}
+.modal-image-video.active  > div > * {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.modal-image-video > div {
+    height: 100%;
+}
+.name-of-the-project .video {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background: #ccc;
+    line-height: 150px;
+    border-radius: 4px;
+}
+.modal-image-video .close-modal {
+    color: #000;
+    cursor: pointer;
+    position: fixed;
+    left: calc(90% - 15px);
+    font-size: 26px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    top: calc(10% - 15px);
+}
+body.modal-shown:before {
+    content: '';
+    position: fixed;
+    z-index: 99991;
+    top: 0;
+    background: rgba(0, 0, 0, 0.84);
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.modal-image-video {
+    display: none;
+    position: fixed;
+    top: 10%;
+    z-index: 99992;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+}
 .main-banner .statistics h3 {
     display: inline-block;
     font-size: 1.5rem;
