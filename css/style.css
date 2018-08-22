@@ -21,8 +21,13 @@ section.main-banner {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
+.name-of-the-project * {
+    vertical-align: middle;
+}
+.name-of-the-project .active {
+    transform: scale(1.1);
+    transition: 0.5s ease all;
+}
 .main-banner .statistics {
     bottom: 10rem;
     right: 5rem;
@@ -911,11 +916,11 @@ body.modal-custom-body:before {
         top: 0;
         z-index: 1;
 }
-#myMenu li {
-    display: none;
+#myMenu li a{
+    visibility: hidden;
 }
-#myMenu li.active {
-    display: initial;
+#myMenu li.active a {
+    visibility: visible;
 }
 .modal-custom h4 {
     font-size: 14px;

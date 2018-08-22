@@ -51,7 +51,7 @@
     <ul>
         <li><a href="./life-at-anvation.html">Life @ Anvation Labs</a></li>
         <li><a href="./about-us.html">About</a></li>
-        <li><a href="./index.html#technology-updates">Blogs</a></li>
+        <li><a href="./index.html#technology-updates">Technology Updates</a></li>
         <li><a href="./contact-us.html">Contact</a></li>
     </ul>
     <div>
@@ -80,6 +80,7 @@
             <img src="images/BetterWorld.jpg">
             <img src="images/BetterWorld.jpg">
             <img src="images/BetterWorld.jpg">
+            <iframe width="150" height="150" src="https://www.youtube.com/embed/tqKpk1wABuI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="card description-card p-4 my-4">
                 <p class="font-weight-bold text-uppercase">Description</p>
@@ -211,6 +212,10 @@
             $(".close-menu").on('click', function() {
                 $(".sidenav").removeClass('active');
             });
+        $(".name-of-the-project .img-row *").on('click', function () {
+           $(".name-of-the-project .img-row *").removeClass('active');
+           $(this).addClass('active')
+        });
             </script>
 </body>
 </html>
