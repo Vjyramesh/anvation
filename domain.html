@@ -504,7 +504,10 @@
 
             $(".modal-custom").hide();
         });
-        $(".project-list").on('click', function() {
+        $(".project-list .col-12").on('click', function() {
+            console.log($(this).index());
+            $(".modal-custom .owl-item").eq($(this).index()).addClass('active');
+            $(".modal-custom .owl-carousel").trigger("to.owl.carousel", [$(this).index(), 1]);
             $(".modal-custom").show();
             $("body").addClass("modal-custom-body");
 

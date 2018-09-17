@@ -218,6 +218,7 @@ body.modal-shown:before {
     font-size: 0.8rem;
     border-radius: 0;
     line-height: 1.75rem;
+    overflow: hidden;
 
 }
 .technology-updates hr {
@@ -437,6 +438,9 @@ footer .social-links a:hover {
     height: 120px;
 }
 .our-clients .owl-carousel .owl-item img {
+    padding: 50px;
+    object-fit: contain;
+    object-position: center;
     height: auto;
 }
 .main-story img {
