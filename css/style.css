@@ -1056,3 +1056,24 @@ ul#myMenu li:hover a {
 .project-list .owl-prev {
     margin-left: 9px;
 }
+
+.not-found {
+    text-align: center;
+    margin-top: 150px;
+    color: #828282;
+}
+
+.not-found i {
+    color: #ddd;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 150px;
+}
+
+.footer-404 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #fff;
+    padding-top: 40px;
+}
