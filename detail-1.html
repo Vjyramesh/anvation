@@ -233,6 +233,15 @@
             $(".modal-image-video").removeClass('active');
             $("body").removeClass('modal-shown')
         })
+
+        $(document).keyup(function(e) {
+            if (e.key === "Escape") { // escape key maps to keycode `27`
+                // <DO YOUR WORK HERE>
+                    $(".modal-image-video > div").html("");
+                    $(".modal-image-video").removeClass('active');
+                    $("body").removeClass('modal-shown')
+            }
+        });
             </script>
 </body>
 </html>

@@ -413,11 +413,16 @@ footer .social-links a:hover {
 }
 
 .img-row img {
+    margin-right: 5px;
+    cursor: pointer;
+    /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.22); */
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    background: #efefef;
+    object-fit: contain;
     object-position: center;
     border-radius: 4px;
+
 }
 
 .description-card {
@@ -957,23 +962,24 @@ background: #fff;
 .modal-custom {
     z-index: 9999;
     display: none;
-    top: 20px;
+    top: 100px;
     padding: 30px 60px;
     background: #fff;
     position: fixed;
-    left: 20px;
-    height: calc(100% - 40px);
+    left: 100px;
+    height: calc(100% - 200px);
     overflow: auto;
-    width: calc(100% - 40px);
+    width: calc(100% - 200px);
+    z-index: 99999;
 }
 body.modal-custom-body:before {
-        content: "";
-        position: fixed;
-        background: rgba(0, 0, 0, 0.9);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        z-index: 1;
+    content: "";
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99999;
 }
 #myMenu li a{
     visibility: hidden;
@@ -989,10 +995,17 @@ body.modal-custom-body:before {
 }
 .modal-custom .close-modal {
     position: fixed;
-    top: 40px;
-    right: 50px;
+    top: 80px;
+    right: 90px;
     color: #000;
     text-decoration: none;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+    font-size: 22px;
 }
 .modal-custom .owl-carousel .owl-nav {
     top: 200px;

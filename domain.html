@@ -542,6 +542,17 @@
                     $(".close-menu").on('click', function() {
                         $(".sidenav").removeClass('active');
                     });
+
+
+                    $(document).keyup(function(e) {
+
+            if (e.key === "Escape") { // escape key maps to keycode `27`
+                // <DO YOUR WORK HERE>
+                    $("body").removeClass("modal-custom-body");
+
+            $(".modal-custom").hide();
+            }
+        });
                     </script>
 </body>
 
