@@ -468,7 +468,10 @@
         $(".show-date").text($(this).find('.date').text());
         $(".show-test").text($(this).find('.card-body p').text());
         $(".show-heading").text($(this).find('h2').text());
-    })
+        if(window.matchMedia('(max-width: 767px)').matches) {
+            window.location.href='./detail-1.html'
+        }
+    });
 </script>
 </body>
 
