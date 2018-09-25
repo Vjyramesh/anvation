@@ -487,7 +487,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#fullpage').fullpage({
+            if(window.matchMedia('(min-width: 768px)').matches) {
+               $('#fullpage').fullpage({
                 //options here
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                 anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
@@ -496,7 +497,9 @@
                 scrollOverflow: true,
                 scrollOverflowReset: true,
                 keyboardScrolling: true
-            });
+            });  
+            }
+           
 
         });
         $(".modal-custom .close-modal").on('click', function() {
