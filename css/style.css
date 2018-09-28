@@ -307,10 +307,11 @@ footer .social-links a:hover {
     }
     #fullpage .project-list {
         position: absolute;
-        top: 120px;
+        bottom: 0;
         z-index: 1;
         right: 33px;
-        width: 15%;
+        width: 80%;
+        left: 10%;
     }
     #fullpage section.main-banner {
         height: 100vh !important;
