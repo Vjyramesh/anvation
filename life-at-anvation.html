@@ -65,7 +65,7 @@
             <li><a href="#">Instagram</a></li>
         </ul>
     </div>
-    <section class="main-banner p-5 position-relative detail-1">
+    <section class="main-banner p-5 position-relative detail-1 " style="background: url('./images/_Banner.jpg')">
     <a href="./index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
         
         <h4 class="font-weight-bold my-4 text-left w-50 mobile-100">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic laudantium dolorum totam natus </h4>
@@ -188,6 +188,12 @@
             $(".close-menu").on('click', function() {
                 $(".sidenav").removeClass('active');
             });
+
+                     $(document).keyup(function(e) {
+                        if (e.key === "Escape") { // escape key maps to keycode `27`
+                                $(".sidenav").removeClass('active');
+                        }
+        });
             </script>
 </body>
 

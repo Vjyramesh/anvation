@@ -242,6 +242,12 @@
                     $("body").removeClass('modal-shown')
             }
         });
+
+         $(document).keyup(function(e) {
+                        if (e.key === "Escape") { // escape key maps to keycode `27`
+                                $(".sidenav").removeClass('active');
+                        }
+        });
             </script>
 </body>
 </html>

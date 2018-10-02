@@ -50,7 +50,7 @@
     <ul>
         <li><a href="./life-at-anvation.html">Life @ Anvation Labs</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="./index.html#technology-updates">Technology Updates</a></li>
+        <li><a href="./index.html#technology-updates">Technology Blogs</a></li>
         <li><a href="./contact-us.html">Contact</a></li>
     </ul>
     <div>
@@ -228,7 +228,7 @@
 
             </div>
             <div class="col-12 col-sm-4 col-md-4">
-                <h4 class="text-uppercase font-weight-bold text-center mt-5">Technology Updates</h4>
+                <h4 class="text-uppercase font-weight-bold text-center mt-5">Technology Blogs</h4>
             </div>
             <div class="col-12 col-sm-4 col-md-4">
                 <div class="input-group technology-input">
@@ -243,7 +243,7 @@
             <div class="card font-weight-bold m-2">
                 <a href="./technology-updates.html">
                     <hr class="mt-5">
-                    <div class="card-body pt-0">
+                    <div class="card-body pt-0 font-weight-light">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                         text ever since the 1500s
                     </div>
@@ -252,7 +252,7 @@
             <div class="card font-weight-bold  m-2">
                 <a href="./technology-updates.html">
                     <hr class="mt-5">
-                    <div class="card-body pt-0">
+                    <div class="card-body pt-0 font-weight-light">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                         text ever since the 1500s
                     </div>
@@ -261,7 +261,7 @@
             <div class="card font-weight-bold m-2">
                 <a href="./technology-updates.html">
                     <hr class="mt-5">
-                    <div class="card-body pt-0">
+                    <div class="card-body pt-0 font-weight-light">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                         text ever since the 1500s
                     </div>
@@ -270,7 +270,7 @@
             <div class="card font-weight-bold  m-2">
                 <a href="./technology-updates.html">
                     <hr class="mt-5">
-                    <div class="card-body pt-0">
+                    <div class="card-body pt-0 font-weight-light">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                         text ever since the 1500s
                     </div>
@@ -337,7 +337,7 @@
         </div>
     </div>
     <div>
-        <img src="images/GlobalImpact.jpg" class="img-fluid" />
+        <img src="images/GlobalImpact.png" style="width:100%" class="img-fluid" />
         <div class="map-location">
             <img src="images/location-map.png"/>
             <span>USA</span>
@@ -472,6 +472,12 @@
             window.location.href='./detail-1.html'
         }
     });
+
+             $(document).keyup(function(e) {
+                        if (e.key === "Escape") { // escape key maps to keycode `27`
+                                $(".sidenav").removeClass('active');
+                        }
+        });
 </script>
 </body>
 
